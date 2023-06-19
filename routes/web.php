@@ -44,4 +44,7 @@ Route::get('/menu', \App\Http\Livewire\menu\Idx::class)->name('menu.idx');
 //PLT
 Route::get('/plt/landing-page', \App\Http\Livewire\Plt\Idx::class)->name('plt.home');
 
-
+//schedule
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/schedule', \App\Http\Livewire\Schedule\Idx::class)->name('schedule.home');
+});

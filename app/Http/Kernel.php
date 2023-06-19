@@ -66,5 +66,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'cas.auth'  => 'Subfission\Cas\Middleware\CASAuth',
         'cas.guest' => 'Subfission\Cas\Middleware\RedirectCASAuthenticated',
+        //akses admin ke schedule
+        'admin' => \App\Http\Middleware\AdminSchedule::class,
     ];
 }

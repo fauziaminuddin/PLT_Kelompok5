@@ -254,6 +254,13 @@ return [
             'icon'      => 'far fa-fw fa-file',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
+
+        [
+            'text'       => 'Schedule',
+            'route'      => 'schedule.home',
+            'icon'      => 'far fa-fw fa-file',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
         [
             'text'       => 'Log out',
             'route'        => 'user.refresh',

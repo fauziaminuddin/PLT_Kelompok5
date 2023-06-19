@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class StudyProgram extends Model
 {
-    protected $fillable = [];
-    protected $table = 'arsys_study_program';
+    protected $fillable = ['code', 'description'];
+    protected $table = 'timetable_program';
     use HasFactory;
 
     public function department(){
