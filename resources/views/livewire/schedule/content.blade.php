@@ -1,3 +1,4 @@
+
 <div>
     <div>
         <select class="form-control my-dropdown" style="width: 500px; cursor: pointer" wire:model="selectedProgram" id="study_program">
@@ -42,9 +43,9 @@
                 @php 
                     $counter = 1 
                 @endphp
-                @foreach ($timetableData as $index => $data)
+                @foreach ($timetableData as $data)
                     <tr>
-                        <td>{{ $counter + 1 }}</td>
+                        <td>{{ $counter++ }}</td>
                         <td style="word-wrap: break-word; max-width: 50px;">
                             {{ $data->code }}</td>    
                         <td style="word-wrap: break-word; max-width: 90px;">
